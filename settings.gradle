@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+rootProject.name = "Note"
+include ':app'
