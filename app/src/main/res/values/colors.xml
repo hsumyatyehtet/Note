@@ -17,7 +17,8 @@
     <color name="colorDivider">#BDBDBD</color>
     <color name="colorText">#FFFFFF</color>
 
-    <color name="colorBackground">#171c26</color>
+    <color name="colorBackground">#0f121a</color>
+    <color name="colorItemBackground">#171c26</color>
     <color name="colorBlue">#3569fe</color>
     <color name="colorYellow">#feb529</color>
 

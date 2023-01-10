@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Note</string>
+    <string name="tv_note_desc">A floating action button (FAB) is a circular button that triggers the primary action in your app\'s UI.</string>
 </resources>
