@@ -8,6 +8,8 @@ fun getNoteList(): MutableList<NoteListVO>{
         NoteListVO(2,"2"),
         NoteListVO(3,"3"),
         NoteListVO(4,"4"),
-        NoteListVO(5,"5")
+        NoteListVO(5,"5"),
+        NoteListVO(6,"6"),
+        NoteListVO(7,"7")
     )
 }
