@@ -10,6 +10,7 @@ fun getNoteList(): MutableList<NoteListVO>{
         NoteListVO(4,"Love is Pain","Testing by hmyh"),
         NoteListVO(5,"Crush","Hello Hi"),
         NoteListVO(6,"Coroutines","There are different ways of implementing this logic: by using blocking requests or callbacks."),
-        NoteListVO(7,"From my crush hee","Blocking requests")
+        NoteListVO(7,"From my crush hee","Blocking requests"),
+        NoteListVO(8,"Note 8","Adding Note")
     )
 }

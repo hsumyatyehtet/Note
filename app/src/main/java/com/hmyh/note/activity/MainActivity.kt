@@ -2,6 +2,7 @@ package com.hmyh.note.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,15 +25,25 @@ class MainActivity : BaseActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setUpRecyclerView()
+        //hide keyboard when launch
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
+        setUpRecyclerView()
+        setUpListener()
+
+    }
+
+    private fun setUpListener() {
+        //hide keyboard when launch
+        binding.etNoteSearch.requestFocus()
+
+        binding.fabAddNote.setOnClickListener {
+            startActivity(NoteCreateActivity.newIntent(this))
+        }
     }
 
     private fun setUpRecyclerView() {
         mNoteAdapter = NoteItemAdapter()
-//        binding.rvNoteList.layoutManager =
-//            GridLayoutManager(this,2)
-//        binding.rvNoteList.adapter = mNoteAdapter
         binding.rvNoteList.layoutManager =
             StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL)
         binding.rvNoteList.adapter = mNoteAdapter
