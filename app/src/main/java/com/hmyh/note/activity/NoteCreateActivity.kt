@@ -47,6 +47,7 @@ class NoteCreateActivity: BaseActivity() {
             var noteListVO = NoteListVO(0,note)
 
             viewModel.insertNote(noteListVO)
+
         }
     }
 
